@@ -13,6 +13,11 @@ namespace AzureWebApp.Controllers
             return View();
         }
 
+        public ActionResult Test()
+        {
+            throw new Exception("Test telemetry stuff!");
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
